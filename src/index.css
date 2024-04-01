@@ -13,7 +13,9 @@
 body{
   font-family: "Roboto", sans-serif;
   background-color: #fffbed;
+  justify-content: space-between;
 }
+
 hr {
   background-color: #fffbed;
   opacity: 0.2;
