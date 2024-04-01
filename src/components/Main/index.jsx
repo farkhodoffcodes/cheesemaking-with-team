@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Sidebar from '../SideBar/Sidebar'
 
 const index = () => {
   return (
@@ -33,7 +34,9 @@ const index = () => {
                     </div>
                 </div>
                 </Container>
-                
+                <div className="sidebar-and-card">
+                    <Sidebar/>
+                </div>
             </HeaderContent>
             <MainCheeseBg>
                 <img src="./images/bg-color.png" alt="bg-color" />
