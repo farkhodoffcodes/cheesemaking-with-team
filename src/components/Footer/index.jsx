@@ -78,10 +78,8 @@ const Footer = () => {
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-youtube"></i>
                     </div>
-                  </div>
-                
+                  </div>   
               </div>
-              
           </Container>
       </Footerinner>
     </>
