@@ -48,6 +48,30 @@ const index = () => {
                     <p>Мы лично отвечаем за качество товара и всегда с радостью поможем Вам с выбором</p>
                 </div>
             </MainCheeseBg>
+            <CheeseReceipt>
+                <Container>
+                    <h2>Мы подобрали для вас</h2>
+                    <div className='receipt-info'>
+                        <div className='receipt'>
+                            <img src="./images/bg-receipt.png" alt="rec" />
+                            <div className='text'>
+                                <p>Более 1000 лучших рецептов</p>
+                                <span>Мы собрали для Вас большую базу рецептов.</span>
+                                <button className='btn'>Перейти</button>
+                            </div>
+                        </div>
+                        <div className='kits'>
+                        <img src="./images/bg-receipt2.png" alt="rec" />
+                        <div className='text'>
+                                <p>крутые Наборы для сыра</p>
+                                <span>Готовые наборы сэкономят время, мы всё сделали за Вас. </span>
+                                <button className='btn'>Перейти</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </Container>
+            </CheeseReceipt>
     </>
   )
 }
@@ -237,4 +261,124 @@ const MainCheeseBg = styled.div`
             line-height: 24px;
         }
     }
+`
+const CheeseReceipt = styled.div`
+    h2{
+        margin-top: 70px;
+        font-size: 28px;
+        font-weight: 800;
+        color: #4E2D2D;
+    }
+    .receipt-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+    
+        .receipt{
+            position: relative;
+            width: calc(50% - 10px);
+            height: 100%;
+            
+                
+            img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            .text{
+                position: relative;
+                display: flex; 
+                flex-direction: column;
+                width: 330px;
+                gap: 20px;
+                padding: 40px;
+                z-index: 2;
+
+            }
+            p{
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 32px;
+                text-transform: uppercase;
+                color: #4E2D2D
+                
+            }
+            span{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 400;
+            }
+            .btn{
+                    width: 132px;
+                    height: 46px;
+                    margin: 50px 0px;
+                    background-color: #FD9339;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    cursor: pointer;
+            }
+            .btn:hover{
+                    background-color: transparent;
+                    border: 2px solid #FD9339;
+                    transition: all .5s;
+                }
+        }
+        .kits {
+            position: relative;
+            width: calc(50% - 10px);
+            height: 100%;
+            
+                
+            img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            .text{
+                position: relative;
+                display: flex; 
+                flex-direction: column;
+                width: 330px;
+                gap: 20px;
+                padding: 40px;
+                color: #fff;
+                z-index: 2;
+
+            }
+            p{
+                font-size: 25px;
+                font-weight: 500;
+                line-height: 32px;
+                text-transform: uppercase;
+
+                
+            }
+            span{
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+            }
+            .btn{
+                    width: 132px;
+                    height: 46px;
+                    margin: 50px 0px;
+                    background-color: #FD9339;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                .btn:hover{
+                    background-color: transparent;
+                    border: 2px solid #FD9339;
+                    transition: all .5s;
+                }
+        }
+}
 `
