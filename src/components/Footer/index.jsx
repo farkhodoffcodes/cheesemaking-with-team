@@ -56,7 +56,7 @@ const Footer = () => {
                   <div className="footer-pay">
                   <h3>Способы оплаты</h3>
                   <div className="footer-icons">
-                  <img src="./images/icons/Ruble.svg" alt="Logo" /> 
+                  <img src="/images/icons/Ruble.svg" alt="Logo" /> 
                   <img src="./images/icons/Worls.svg" alt="Logo" /> 
                   <img src="./images/icons/Sberbank.svg" alt="Logo" /> 
                   <img src="./images/icons/Yandex.svg" alt="Logo" /> 

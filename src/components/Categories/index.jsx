@@ -2,6 +2,8 @@ import React from 'react'
 import Header from '../Header'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import Footer from '../Footer'
+import Sidebar from '../SideBar/Sidebar'
 
 const Category = () => {
   return (
@@ -20,7 +22,9 @@ const Category = () => {
       <Category_main>
         <Container>
             <section className='category__main'>
-                <div className="category__main--left">left</div>
+                <div className="category__main--left">
+                    <Sidebar/>
+                </div>
                 <div className="category__main--right">
                     <div className="category__main--right--top">
                         <h2 className='category--rigth__heading'>Кисломолочные закваски</h2>
@@ -31,12 +35,13 @@ const Category = () => {
                         </button>
                     </div>
                     <div className="category__main--right-product">
-                        
+
                     </div>
                 </div>
             </section>
         </Container>
       </Category_main>
+      <Footer/>
     </div>
   )
 }
@@ -95,7 +100,9 @@ const Category_main = styled.div`
         .category__main--left{
             width:30%;
             height:797px;
+            margin-top:-30px
         }
+
 
         .category__main--right{
             width:70%;
