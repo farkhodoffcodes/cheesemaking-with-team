@@ -30,6 +30,9 @@ const Category = () => {
                             Фильтр
                         </button>
                     </div>
+                    <div className="category__main--right-product">
+                        
+                    </div>
                 </div>
             </section>
         </Container>
