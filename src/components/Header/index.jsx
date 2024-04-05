@@ -78,7 +78,7 @@ const Header = () => {
                         <p>Рецепты
                         <i class="fa-solid fa-chevron-down"></i>
                         </p>
-                        <p>Доставка и оплата</p>
+                        <Link to={'/delivery'}><p>Доставка и оплата</p></Link>
                         <p>Калькулятор Сыродела</p>
                         <p>Отзывы</p>
                         <p>Вопросы и ответы</p>

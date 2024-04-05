@@ -100,6 +100,7 @@ const Footerinner = styled.div`
     align-items: center;
     margin-top: 50px;
     gap: 80px;
+    
     .footer-logo {
       p {
         color: gray;

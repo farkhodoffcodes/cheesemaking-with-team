@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import Sidebar from '../SideBar/Sidebar'
+import Card from '../Card/Card'
 
 const index = () => {
   return (
-    <>
+    <div className='wrapper-for-all'>
       <HeaderContent>
                 <Container>
                 <div className='content-slider'>
@@ -36,6 +37,7 @@ const index = () => {
                 </Container>
                 <div className="sidebar-and-card">
                     <Sidebar/>
+                    <Card/>
                 </div>
             </HeaderContent>
             <MainCheeseBg>
@@ -75,14 +77,14 @@ const index = () => {
                     
                 </Container>
             </CheeseReceipt>
-    </>
+    </div>
   )
 }
 
 export default index
 
 const Container = styled.div`
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
 
 `
