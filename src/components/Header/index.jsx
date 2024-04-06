@@ -78,10 +78,10 @@ const Header = () => {
                         <p>Рецепты
                         <i class="fa-solid fa-chevron-down"></i>
                         </p>
-                        <Link to={'/delivery'}><p>Доставка и оплата</p></Link>
+                    <Link to={'/delivery'} className='delivery-and-payment-link'><p className='delivery-and-payment-p'>Доставка и оплата</p></Link>
                         <p>Калькулятор Сыродела</p>
                         <p>Отзывы</p>
-                        <p>Вопросы и ответы</p>
+                        <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
                         <p>Контакты</p>
                         <div className='input'>
                             <i class="fa-solid fa-magnifying-glass"></i>
