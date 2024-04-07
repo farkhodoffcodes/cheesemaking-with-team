@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import Footer from '../Footer'
 import Sidebar from '../SideBar/Sidebar'
+import Card from '../Card/Card'
 
 const Category = () => {
   return (
@@ -12,9 +13,9 @@ const Category = () => {
       <Category_top>
         <Container>
             <ol className='category--top__menu'>
-                <Link to={"/главная"}><li className='category--top__menu__item'>Главная <i class="fa-solid fa-chevron-right"></i></li></Link>
-                <Link to={"/ингредиенты"}><li className='category--top__menu__item'>Ингредиенты <i class="fa-solid fa-chevron-right"></i></li></Link>
-               <Link to={"/Кисломолочные закваски"}> <li className='category--top__menu__item' id='category--top__menu__item-active'>Кисломолочные закваски</li></Link>
+                <Link className='links' to={"/главная"}><li className='category--top__menu__item'>Главная <i class="fa-solid fa-chevron-right"></i></li></Link>
+                <Link className='links' to={"/ингредиенты"}><li className='category--top__menu__item'>Ингредиенты <i class="fa-solid fa-chevron-right"></i></li></Link>
+               <Link className='links' to={"/Кисломолочные закваски"}> <li className='category--top__menu__item' id='category--top__menu__item-active'>Кисломолочные закваски</li></Link>
             </ol>
         </Container>
       </Category_top>
@@ -35,7 +36,7 @@ const Category = () => {
                         </button>
                     </div>
                     <div className="category__main--right-product">
-
+                        <Card/>
                     </div>
                 </div>
             </section>
@@ -100,7 +101,6 @@ const Category_main = styled.div`
         .category__main--left{
             width:30%;
             height:797px;
-            margin-top:-30px
         }
 
 
@@ -137,4 +137,6 @@ const Category_main = styled.div`
             }
         }
     }
+
+    
 `

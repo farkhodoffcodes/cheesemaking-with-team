@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
@@ -24,10 +25,12 @@ const Sidebar = () => {
                     <p>Плесень для сыра</p>
                     <img src="./img/Vector (4).svg" alt="" />
                 </div>
-                <div className="first-loc">
-                    <p className='receipt-menu-p'>Кисломолочные закваски</p>
+                <Link className='links' to={"/k-закваски"}>
+                <div className="first-loc k-закваски">
+                    <p className='receipt-menu-p '>Кисломолочные закваски</p>
                     <img src="./img/Vector (4).svg" alt="" />
                 </div>
+                </Link>
                 <div className="first-loc">
                     <p className='receipt-menu-p'>Красители для сыра</p>
                 </div>
