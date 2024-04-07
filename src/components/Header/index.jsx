@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Receipts from '../Receipts'
+// import Receipts from '../Receipts'
 
 
 const Header = () => {
@@ -21,12 +21,12 @@ const Header = () => {
                         <p>Пн-Пт 9:00 - 19:00</p>
                     </div>
                     <div className='about'>
-                    <p>О компании</p>
-                    <p>Преимущества</p>
-                    <p>Акционные товары</p>
+                        <Link to={'/'}>О компании</Link>
+                        <Link to={'/'}>Преимущества</Link>
+                        <Link to={'/'}>Акционные товары</Link>
                     <div className='icon'>
                         <i class="fa-regular fa-user"></i>
-                        <Link to='login' className='login'>Войти в аккаунт</Link><p></p>
+                        <Link to='login' className='login'>Войти в аккаунт</Link>
                     </div>
                     </div>
                     
@@ -78,7 +78,7 @@ const Header = () => {
                         <p>Рецепты
                         <i class="fa-solid fa-chevron-down"></i>
                         </p>
-                    <Link to={'/delivery'} className='delivery-and-payment-link'><p className='delivery-and-payment-p'>Доставка и оплата</p></Link>
+                        <Link to={'/delivery'} className='delivery-and-payment-link'><p className='delivery-and-payment-p'>Доставка и оплата</p></Link>
                         <p>Калькулятор Сыродела</p>
                         <p>Отзывы</p>
                         <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
@@ -105,7 +105,7 @@ const Container = styled.div`
 
 const HeaderTop = styled.div`
     font-size: 14px;
-
+    
     .headerTop__inner {
         display:flex;
         align-items:center;
@@ -138,6 +138,11 @@ const HeaderTop = styled.div`
             gap: 30px;
             margin-left: auto;
             cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
 `
