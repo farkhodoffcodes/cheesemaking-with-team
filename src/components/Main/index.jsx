@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Sidebar from '../SideBar/Sidebar'
 import Card from '../Card/Card'
 import { Link } from 'react-router-dom'
-import { getByDisplayValue } from '@testing-library/react'
+
 
 const index = () => {
   return (
@@ -37,6 +37,7 @@ const index = () => {
                     </div>
                 </div>
                 </Container>
+                
                 <div className="sidebar-and-card">
                     <Sidebar/>
                     <Card/>

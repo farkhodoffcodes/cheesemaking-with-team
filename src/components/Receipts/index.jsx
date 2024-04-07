@@ -1,6 +1,6 @@
 import React from "react";
-// import { Link } from 'react-router-dom'
-// import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 import Header from "../Header";
 import Sidebar from "../SideBar/Sidebar";
 import Footer from "../Footer"
@@ -10,6 +10,21 @@ import Footer from "../Footer"
 const Receipts = () => {
     return (
         <div><Header/>
+            <ReceiptDetails>
+            <Container>
+                <ul>
+                    <li>
+                        <Link to={'/'}>Главная<i class="fa-solid fa-angle-right"></i></Link>
+                    </li>
+                    <li>
+                        <Link to={'../receipts'}>Рецепты<i class="fa-solid fa-angle-right"></i></Link>
+                    </li>
+                    <li>
+                        <Link to={'../receiptdetails'}>Рецепт сыра Бри<i class="fa-solid fa-angle-right"></i></Link>
+                    </li>
+                </ul>
+            </Container>    
+        </ReceiptDetails>
           <div className="receipts">
           <Sidebar/> 
            <h2>рецепты сыров</h2>
@@ -125,3 +140,26 @@ const Receipts = () => {
 }
 
 export default Receipts
+
+const Container = styled.div`
+    width: 85%;
+    margin: 0 auto;
+
+`
+const ReceiptDetails = styled.div`
+  ul{
+    display: flex;
+    margin: 30px 0px;
+    gap: 30px;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: #000000;
+        i{
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+`

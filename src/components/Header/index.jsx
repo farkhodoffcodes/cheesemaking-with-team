@@ -77,7 +77,7 @@ const Header = () => {
                     <div className='navbar'>
                     <Link to={'/receipts'} className='receipts-link'>  <p>Рецепты
                         <i class="fa-solid fa-chevron-down"></i>
-                        </p>
+                        </p></Link>
                     <Link to={'/delivery'} className='delivery-and-payment-link'><p className='delivery-and-payment-p'>Доставка и оплата</p></Link>
                         <p>Калькулятор Сыродела</p>
                     <Link to={'/reviews'} className='reviews-link'><p>Отзывы</p></Link> 

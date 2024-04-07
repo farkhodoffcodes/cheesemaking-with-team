@@ -6,6 +6,7 @@ import Receipts from "./components/Receipts";
 import Delivery from "./components/Delivery/Delivery";
 import AnsAndQuest from "./components/AnsAndQuest/AnsAndQuest";
 import Reviews from "./components/Reviews";
+import ReceiptDetails from "./components/ReceiptDetails";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/ansandquest" element={<AnsAndQuest/>} />
         <Route path="/receipts" element={<Receipts />} />
         <Route path="/reviews" element={<Reviews />} />
+        <Route path="/receiptdetails" element={<ReceiptDetails/>}/>
         
       </Routes>
     </BrowserRouter>
