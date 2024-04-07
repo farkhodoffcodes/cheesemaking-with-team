@@ -5,6 +5,7 @@ import Category from "./components/Categories";
 import Receipts from "./components/Receipts";
 import Delivery from "./components/Delivery/Delivery";
 import AnsAndQuest from "./components/AnsAndQuest/AnsAndQuest";
+import Reviews from "./components/Reviews";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/ansandquest" element={<AnsAndQuest/>} />
         <Route path="/receipts" element={<Receipts />} />
+        <Route path="/reviews" element={<Reviews />} />
+        
       </Routes>
     </BrowserRouter>
   );

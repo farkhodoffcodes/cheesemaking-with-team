@@ -56,13 +56,13 @@ const Footer = () => {
                   <div className="footer-pay">
                   <h3>Способы оплаты</h3>
                   <div className="footer-icons">
-                  <img src="/images/icons/Ruble.svg" alt="Logo" /> 
-                  <img src="./images/icons/Worls.svg" alt="Logo" /> 
-                  <img src="./images/icons/Sberbank.svg" alt="Logo" /> 
-                  <img src="./images/icons/Yandex.svg" alt="Logo" /> 
+                  <img src="/images/icons/Ruble.png" alt="Logo" /> 
+                  <img src="./images/icons/World.png" alt="Logo" /> 
+                  <img src="./images/icons/Sberbank.png" alt="Logo" /> 
+                  <img src="./images/icons/Yandex.png" alt="Logo" /> 
                   <br />
-                  <img src="./images/icons/Mastercard.svg" alt="Logo" /> 
-                  <img src="./images/icons/Visa.svg" alt="Logo" /> 
+                  <img src="./images/icons/Mastercard.png" alt="Logo" /> 
+                  <img src="./images/icons/Visa.png" alt="Logo" /> 
                   </div>
                   </div>
                   <div className="footer-phone">
