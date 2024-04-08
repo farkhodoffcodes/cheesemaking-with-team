@@ -105,11 +105,10 @@ const Category_main = styled.div`
 
 
         .category__main--right{
-            width:70%;
-            height:1248px;
+            height:auto;
             margin-bottom:80px;
             .category__main--right--top{
-                width:880px;
+                width:100%;
                 display:flex;
                 align-items:center;
                 justify-content: space-between;

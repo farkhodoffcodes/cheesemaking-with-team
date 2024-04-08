@@ -13,8 +13,20 @@ const Nav_menu = () => {
   )
 }
 
+const Nav_menu2 = () => {
+    return (
+      <div>
+        <Nav>
+          <div className='div'>
+          <h2>ali</h2>
+          </div>
+        </Nav>
+      </div>
+    )
+  }
+
 
 const Nav = styled.div`
 
 `
-export default Nav_menu
+export {Nav_menu2, Nav_menu}

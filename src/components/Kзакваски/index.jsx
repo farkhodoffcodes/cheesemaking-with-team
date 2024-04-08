@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../Header'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import Nav_menu from '../Nav'
+import {Nav_menu2, Nav_menu} from '../Nav'
 import Footer from '../Footer'
 import Sidebar from '../SideBar/Sidebar'
 import Card from '../Card/Card'
@@ -50,12 +50,10 @@ const Kзакваски = () => {
                 
                 {state ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
                 " alt="icon" />}
-                {state ? <Nav_menu/> : state}
               </li>
               <li onClick={changeIcon2}>Тип продукта 
               {data ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
                 " alt="icon" />}  
-                {data ? <Nav_menu/> : data}
               </li>
               <li onClick={changeIcon}>Производитель
               {state ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
@@ -64,7 +62,6 @@ const Kзакваски = () => {
               <li onClick={changeIcon}>Цена
               {state ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
                 " alt="icon" />}
-                {state ? <Nav_menu/> : state}
               </li>
             </ol>
 
@@ -73,6 +70,9 @@ const Kзакваски = () => {
               Показывать только товар в наличии
             </span>
           </div>
+          {data ? <Nav_menu2/> : data}
+          {state ? <Nav_menu/> : state}
+
         </Container>
       </Category__main_top>
 
