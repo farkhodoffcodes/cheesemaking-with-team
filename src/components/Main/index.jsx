@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Sidebar from '../SideBar/Sidebar'
 import Card from '../Card/Card'
+import { Link } from 'react-router-dom'
+
 
 const index = () => {
   return (
@@ -35,6 +37,7 @@ const index = () => {
                     </div>
                 </div>
                 </Container>
+                
                 <div className="sidebar-and-card">
                     <Sidebar/>
                     <Card/>
@@ -77,6 +80,49 @@ const index = () => {
                     
                 </Container>
             </CheeseReceipt>
+            <CheeseEquipment>
+                <Container>
+                <h2>наше оборудование</h2>
+                <div className='equipment'>
+                            <img src="./images/bg-equipment.png" alt="rec" />
+                            <div className='text'>
+                                <p>Прессы для сыра</p>
+                                <span>Пресс можно использовать для прессования твердых сыров. Он разбирается, и вы можете компактно его упаковать в коробку.</span>
+                                <button className='btn'>Узнать больше</button>
+                                <div className='navigation'>
+                                    <button className='arrow-btn'><i class="fa-solid fa-angle-left"></i></button>
+                                    <button className='arrow-btn'><i class="fa-solid fa-angle-right"></i></button>
+                                </div>
+                                <ul class="line">
+                                    <div class="selected">
+                                        <span>01</span>
+                                        <span>/</span>
+                                        <span>03</span>
+                                    </div>
+                                    <li>
+                                        <a href="#" class="active"></a>
+                                    </li>
+                                    <li>
+                                        <a href='#' className='bg'></a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                </Container>
+            </CheeseEquipment>
+            <CheesePlate>
+                <Container>
+                    <div className='cheese-plate'>
+                        <img src="./images/plate.png" alt="plate" />
+                        <div className='txt'>
+                            <p>Сырная тарелка</p>
+                            <span>Так называется блюдо, которое состоит  из разных сортов сыра. </span>
+                            <Link to={'/'}>Читать далее <i class="fa-solid fa-angle-right"></i></Link>
+                        </div>
+                    </div>
+                </Container>
+            </CheesePlate>
     </div>
   )
 }
@@ -353,25 +399,87 @@ const CheeseReceipt = styled.div`
                 padding: 40px;
                 color: #fff;
                 z-index: 2;
-
-            }
-            p{
+                p{
                 font-size: 25px;
                 font-weight: 500;
                 line-height: 32px;
                 text-transform: uppercase;
 
                 
-            }
-            span{
-                font-size: 14px;
-                line-height: 21px;
-                font-weight: 400;
-            }
-            .btn{
+                }
+                span{
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-weight: 400;
+                }
+                .btn{
                     width: 132px;
                     height: 46px;
                     margin: 50px 0px;
+                    background-color: #FD9339;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 5px;
+                    color: #fff;
+                    cursor: pointer;
+
+                    .btn:hover{
+                    background-color: transparent;
+                    border: 2px solid #FD9339;
+                    transition: all .5s;
+                    } 
+                }
+                ul{
+                    a   {
+                        width: 30px;
+                    }
+                }
+            }
+               
+    }
+            
+}
+`
+const CheeseEquipment = styled.div`
+    margin: 100px 0px;
+
+    h2{
+        color: #4E2D2D;
+    }
+    .equipment{
+        position: relative;
+        height: 100%;
+
+        img{
+            position: absolute;
+            width: 100%;
+        }
+        .text{
+                position: relative;
+                display: flex; 
+                flex-direction: column;
+                max-width: 500px;
+                margin-top: 30px;
+                gap: 20px;
+                padding: 60px 0px 60px 80px;
+                z-index: 2;
+
+                p{
+                    color: #4E2D2D;
+                    font-size: 24px;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                }
+                span{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #666666;
+                }
+                .btn{
+                    width: 185px;
+                    height: 56px;
+                    margin: 30px 0px;
                     background-color: #FD9339;
                     font-size: 16px;
                     border: none;
@@ -382,8 +490,109 @@ const CheeseReceipt = styled.div`
                 .btn:hover{
                     background-color: transparent;
                     border: 2px solid #FD9339;
+                    color: #FD9339;
                     transition: all .5s;
                 }
+                .navigation{
+                    display: flex;
+                    margin: 0 auto;
+                    .arrow-btn{
+                    width: 18px;
+                    height: 20px;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    }
+                }
+                ul.line {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+
+                    li {
+                        a {
+                        position: relative;
+                        height: 2px;
+
+
+                        &.active {
+                            position: absolute;
+                            background-color: #101010;
+                            width: 29px;
+
+                            /* &::before {
+                            content: "";
+                            position: absolute;
+                            top: -3px;
+                            left: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 100%;
+                            background-color: #e8aa31;
+                            } */
+                        }
+                        &.bg{
+                            position: absolute;
+                            width: 146px;
+                            background-color: #4E2D2D;
+                            opacity: 0.3;
+                        }
+                        }
+                    }
+
+                    .selected {
+                        margin-right: 20px;
+                        span {
+                        &:first-child {
+                            color: #4E2D2D;
+                        }
+
+                        color: #4E2D2D;
+                        }
+                    }
+                }
+
+            }
+    }
+`
+const CheesePlate = styled.div`
+    .cheese-plate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 250px;
+
+        img{
+            max-width: 380px;
         }
-}
+        .txt{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #fff;
+            width: 380px;
+
+            a{  
+                padding: 15px;
+                color: #FD9339;
+            }
+            p{
+                padding: 15px;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #4E2D2D;
+            }
+            span{
+                padding-left: 15px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #000;
+                opacity: 0.5;
+            }
+        }
+    }
+
 `
