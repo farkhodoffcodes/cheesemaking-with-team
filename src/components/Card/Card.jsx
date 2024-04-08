@@ -1,60 +1,86 @@
-import React, {useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
-const Api_url = "/api/db.json"
 const Card = () => {
-  const [data, setData] = useState([])
+  const [ingredients, setIngredients] = useState([]);
+  const [plate, setPlate] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-      const response = await fetch(Api_url)
-      const json = await response.json()
-      setData(json)
+        const response = await fetch('/api/db.json');
+        const jsonData = await response.json();
+        setIngredients(jsonData.ingredients);
+        setPlate(jsonData.plate);
       } catch (error) {
-        console.log("error", error)
+        console.error('Ошибка при загрузке данных:', error);
       }
-    }
-    fetchData()
-  }, [])
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <div className="card-block">
-      <div className="ingredients--promo">
+      {/* <div className="ingredients--promo">
         <div className="ingredients-h4">Популярные товары</div>
         <div className="promo-p">Акции</div>
-      </div>
+      </div> */}
       <div className="card-h2-ingredients">Ингредиенты</div>
       <div className="block-of-card">
         <div className="block-one">
-            <div className="home-block-of-card">
-
+          {ingredients.map((ingredient) => (
+            <div className="home-block-of-card" key={ingredient.id}>
+              <img src={ingredient.image} alt={ingredient.title} />
+              <div className="two-circles">
+                <div className="first-circle"></div>
+                <div className="second-circle"></div>
+              </div>
+              <p>{ingredient.title}</p>
+              <div className="hr-line"></div>
+              <div className="txt-btn-component">
+                <div className="text-prices">
+                  <div className="price-and-things">
+                  <p className='price-p'>{ingredient.price}₽</p>
+                  /
+                  <p className='things-p'>{ingredient.things}</p>
+                  </div>
+                  <p className='second-price-p'>{ingredient.secondPrice}₽</p>
+                </div>
+                <button>Добавить</button>
+              </div>
             </div>
-            <div className="home-block-of-card">
-              
-            </div>
-            <div className="home-block-of-card">
-              
-            </div>
-            <div className="home-block-of-card">
-              
-            </div>
+          ))}
         </div>
+      </div>
+      <div className="card-h2-ingredients">Оборудование</div>
+      <div className="block-of-card">
         <div className="block-one">
-            <div className="home-block-of-card">
-
+          {ingredients.map((ingredient) => (
+            <div className="home-block-of-card" key={ingredient.id}>
+              <img src={ingredient.image} alt={ingredient.title} />
+              <div className="two-circles">
+                <div className="first-circle"></div>
+                <div className="second-circle"></div>
+              </div>
+              <p>{ingredient.title}</p>
+              <div className="hr-line"></div>
+              <div className="txt-btn-component">
+                <div className="text-prices">
+                  <div className="price-and-things">
+                  <p className='price-p'>{ingredient.price}₽</p>
+                  /
+                  <p className='things-p'>{ingredient.things}</p>
+                  </div>
+                  <p className='second-price-p'>{ingredient.secondPrice}₽</p>
+                </div>
+                <button>Добавить</button>
+              </div>
             </div>
-            <div className="home-block-of-card">
-              
-            </div>
-            <div className="home-block-of-card">
-              
-            </div>
-            <div className="home-block-of-card">
-              
-            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

@@ -4,7 +4,7 @@
             "id" : 1,
             "title" : "Мезофильная закваска Danisco CHOOZIT MM...",
             "price" : 1300,
-            "second-price" : 1800,
+            "secondPrice" : 1800,
             "things" : "1 шт.",
             "image" : "./img/light-sand.jpg",
             "link" : "./img/light-sand.jpg"
@@ -13,7 +13,7 @@
             "id" : 2,
             "title" : "Душистый перец горошком (100г)",
             "price" : 200,
-            "second-price" : 320,
+            "secondPrice" : 320,
             "things" : "1 шт.",
             "image" : "./img/gorchok.jpg",
             "link" : "./img/gorchok.jpg"
@@ -22,7 +22,7 @@
             "id" : 3,
             "title" : "Красный перец молотый (100г)",
             "price" : 380,
-            "second-price" : 400,
+            "secondPrice" : 400,
             "things" : "1 шт.",
             "image" : "./img/spidometr.jpg",
             "link" : "./img/spidometr.jpg"
@@ -31,7 +31,7 @@
             "id" : 4,
             "title" : "Мускатный орех молотый (100г)",
             "price" : 420,
-            "second-price" : 560,
+            "secondPrice" : 560,
             "things" : "1 шт.",
             "image" : "./img/zoom.jpg",
             "link" : "./img/zoom.jpg"
@@ -40,7 +40,7 @@
             "id" : 5,
             "title" : "Форма для твердого сыра 1 кг",
             "price" : 1300,
-            "second-price" : 1800,
+            "secondPrice" : 1800,
             "things" : "1 шт.",
             "image" : "./img/yellow-sand.jpg",
             "link" : "./img/yellow-sand.jpg"
@@ -49,7 +49,7 @@
             "id" : 6,
             "title" : "Душистый перец горошком (100г)",
             "price" : 200,
-            "second-price" : 320,
+            "secondPrice" : 320,
             "things" : "1 шт.",
             "image" : "./img/red-sand.jpg",
             "link" : "./img/red-sand.jpg"
@@ -58,7 +58,7 @@
             "id" : 7,
             "title" : "Красный перец молотый (100г)",
             "price" : 380,
-            "second-price" : 400,
+            "secondPrice" : 400,
             "things" : "1 шт.",
             "image" : "./img/brown-sand.jpg",
             "link" : "./img/brown-sand.jpg"
@@ -67,7 +67,7 @@
             "id" : 8,
             "title" : "Мускатный орех молотый (100г)",
             "price" : 420,
-            "second-price" : 560,
+            "secondPrice" : 560,
             "things" : "1 шт.",
             "image" : "./img/green-sand.jpg",
             "link" : "./img/green-sand.jpg"
