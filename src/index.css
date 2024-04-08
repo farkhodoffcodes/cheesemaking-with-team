@@ -678,3 +678,9 @@ hr {
 }
 
 /* SIDEBAR LINKS STYLE END */
+
+
+.category__main{
+  z-index: 1;
+}
+

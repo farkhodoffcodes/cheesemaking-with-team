@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../Header'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import {Nav_menu2, Nav_menu} from '../Nav'
+import {Nav_menu2, Nav_menu, Nav_menu1, Nav_menu3, Nav_menu4} from '../Nav'
 import Footer from '../Footer'
 import Sidebar from '../SideBar/Sidebar'
 import Card from '../Card/Card'
@@ -12,15 +12,27 @@ import Card from '../Card/Card'
 
 const Kзакваски = () => {
   const [state, setState] = useState(false);
-  const [data, setData] = useState(false);
+  const [data2, setData2] = useState(false);
+  const [data3, setData3] = useState(false);
+  const [data4, setData4] = useState(false);
 
   const changeIcon = () =>{
     setState(!state)
   }
 
   const changeIcon2 = () =>{
-    setData(!data)
+    setData2(!data2)
   }
+
+  const changeIcon3 = () =>{
+    setData3(!data3)
+  }
+
+  const changeIcon4 = () =>{
+    setData4(!data4)
+  }
+
+  
   return (
     <div>
       <Header/>
@@ -52,15 +64,15 @@ const Kзакваски = () => {
                 " alt="icon" />}
               </li>
               <li onClick={changeIcon2}>Тип продукта 
-              {data ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
+              {data2 ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
                 " alt="icon" />}  
               </li>
-              <li onClick={changeIcon}>Производитель
-              {state ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
+              <li onClick={changeIcon3}>Производитель
+              {data3 ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
                 " alt="icon" />}
               </li>
-              <li onClick={changeIcon}>Цена
-              {state ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
+              <li onClick={changeIcon4}>Цена
+              {data4 ?  <img src="../images/icons/arrows-diagrams-04 1 (1).svg" alt="ico" /> : <img src="../images/icons/arrows-diagrams-04 1.svg
                 " alt="icon" />}
               </li>
             </ol>
@@ -70,8 +82,10 @@ const Kзакваски = () => {
               Показывать только товар в наличии
             </span>
           </div>
-          {data ? <Nav_menu2/> : data}
-          {state ? <Nav_menu/> : state}
+          {data2 ? <Nav_menu2/> : data2}
+          {data3 ? <Nav_menu3/> : data3}
+          {data4 ? <Nav_menu4/> : data4}
+          {state ? <Nav_menu1/> : state}
 
         </Container>
       </Category__main_top>
@@ -144,6 +158,7 @@ const Category__main_top = styled.div`
     flex-direction:row;
     justify-content: space-between;
     margin-bottom:24px;
+    z-index:5;
 
     h2{
       font-size: 28px;
@@ -224,6 +239,7 @@ const Category__main_top = styled.div`
         line-height:24px;
         color:#292929;
         transition:all .3s ease-in;
+        cursor:pointer;
 
         &:active{
           color:#FD9339;
@@ -241,6 +257,7 @@ const Category__main = styled.div`
     display:flex;
     gap:20px;
     flex-direction:row;
+    z-index:3;
   }
 `
 
