@@ -53,7 +53,7 @@ const Nav_menu2 = () => {
             </li>
           </ol>
 
-          <button>Применить</button>
+          <button type='submit'>Применить</button>
           </div>
           </div>
         </Nav2>
@@ -78,7 +78,22 @@ const Nav_menu2 = () => {
       <div>
         <Nav4>
           <div className='div'>
-          <h2>4</h2>
+            <div className="div2">
+                <div className="sum-wrapper">
+                    <ins>159 <span>руб</span></ins>
+                    <ins>159 <span>руб</span></ins>
+                </div>
+                <input className='ins-input-range' type="range" />
+                <hr />
+                
+                <span>
+                    <input id='ins-check' type="checkbox" />
+                    <label htmlFor="ins-check">Товары со скидкой</label>
+                </span>
+                <br />
+
+                <button className='ins-btn'>Применить</button>
+            </div>
           </div>
         </Nav4>
       </div>
@@ -86,9 +101,6 @@ const Nav_menu2 = () => {
   }
 
 
-const Nav = styled.div`
-
-`
 
 const Nav1 = styled.div`
   .nav_menu1-wrapper{
@@ -147,7 +159,6 @@ const Nav2 = styled.div`
                     font-size:16px;
                     line-height:20px;
                     color:#808080;
-
                 }
             
             }
@@ -204,14 +215,83 @@ const Nav3 = styled.div`
 
 const Nav4 = styled.div`
   .div{
-    h2{
         width:240px;
-        height:390px;
-        background-color:red;
+        height:220px;
+        background-color:#fff;
         position:absolute;
         left:690px;
         top:420px;
-    }
+
+        .div2{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding:20px;
+            width:240px;
+            height:220px;
+            border-radius:10px;
+
+            .sum-wrapper{
+                display:flex;
+                align-items:center;
+                gap:10px;
+                margin-bottom:16px;
+
+                    ins{
+                        text-decoration: none;
+                        display:flex;
+                        align-items:center;
+                        gap:20px;
+                        width:95px;
+                        height:36px;
+                        border:1px solid #ccc;
+                        background-color:transparent;
+                        padding-left:10px;
+                        border-radius:4px;
+                    }
+            }
+
+            .ins-input-range{
+                display:block;
+                margin:0 auto;
+            }
+
+            span{
+                display:flex;
+                align-items:center;
+                gap:10px;
+
+                input{
+                    width:20px;
+                    height:20px;
+                }
+            }
+
+            button{
+                width:200px;
+                height:36px;
+                border-radius:5px;
+                border:1px solid #4E2D2D;
+                font0-size:14px;
+                line-height:24px;
+                color:#4E2D2D;
+                font-weight:bold;
+                background-color:transparent;
+                cursor:pointer;
+                transition: all .3s ease-in;
+                display:block;
+                margin:0 auto;
+    
+                &:hover{
+                    color:#fff;
+                    background-color:#4E2D2D;
+                    transition: all .3s ease-in-out;
+                }
+    
+                &:active{
+                    opacity:0.7;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
   }
 `
 export {Nav_menu2, Nav_menu1, Nav_menu3, Nav_menu4}
