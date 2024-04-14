@@ -26,7 +26,7 @@ const Sidebar = () => {
                     <p>Плесень для сыра</p>
                     <img src="./img/Vector (4).svg" alt="" />
                 </div>
-                <Link className='links' to={"/k-закваски"}>
+                <Link className='links' to={"/yeast"}>
                 <div className="first-loc k-закваски">
                     <p className='receipt-menu-p '>Кисломолочные закваски</p>
                     <img src="./img/Vector (4).svg" alt="" />

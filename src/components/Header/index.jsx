@@ -21,7 +21,7 @@ const Header = () => {
                         <p>Пн-Пт 9:00 - 19:00</p>
                     </div>
                     <div className='about'>
-                        <Link to={'/'}>О компании</Link>
+                        <Link title='about' to={'/about'}>О компании</Link>
                         <Link to={'/'}>Преимущества</Link>
                         <Link to={'/'}>Акционные товары</Link>
                     <div className='icon'>
@@ -30,7 +30,7 @@ const Header = () => {
                     </div>
                     </div>
                     
-
+                        
                     </div>
                 </Container>
                 <hr />
@@ -82,7 +82,11 @@ const Header = () => {
                         <p>Калькулятор Сыродела</p>
                     <Link to={'/reviews'} className='reviews-link'><p>Отзывы</p></Link> 
                         <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
-                        <p>Контакты</p>
+                        <Link to={"/contact"} className='contact--link__p'>
+                        
+                        <p className='contact-paragraph'>Контакты</p>
+                    
+                        </Link>
                         <div className='input'>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" placeholder='Введите название товара или артикул'/>

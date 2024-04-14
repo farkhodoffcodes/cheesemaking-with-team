@@ -684,5 +684,297 @@ hr {
   z-index: 1;
 }
 
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.link{
+  text-decoration: none !important;
+}
+
+/* Contact */
+
+.Contact--hero{
+  width: 820px;
+  margin: 0 auto;
+  padding-left: 80px;
+}
+
+
+
+.contact__sidebar{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+
+.contact--border__top{
+  width: 830px;
+    background-color: #fffbed;
+    opacity: 0.2;
+    margin: 18px 0px;
+  padding-left: 80px;
+}
+
+.Contact__telefon{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  
+}
+
+.contact__iteam__list{
+  display: flex;
+  list-style: none;
+  gap: 70px;
+  margin-top: 30px;
+}
+
+.contact__iteam__h3{
+  font-size: 16px;
+  color: #4E2D2D;
+  line-height: 24px;
+  
+}
+
+.phone{
+  font-size: 24px;
+  color: #4E2D2D;
+  width: 233px;
+  line-height: 35px;
+}
+
+.ins{
+  font-size: 14px;
+  color: #4E2D2D;
+  text-decoration: none;
+}
+
+.cubbota{
+  font-size: 14px;
+  color: #666666;
+  width: 170px;
+  line-height: 25px;
+}
+
+.cubbota1{
+  font-size: 14px;
+  color: #666666;
+  width: 250px;
+  line-height: 25px;
+}
+
+.contact__h31{
+  margin-left: 80px ;
+  font-size: 34px;
+  color: #4E2D2D;
+}
+
+.contact--border__top{
+  margin-left: 80px;
+  position: absolute;
+}
+
+.contact--border__top__one{
+  width: 830px;
+  margin-top: 30px;
+}
+
+.contact__input{
+  width: 380px;
+  height: 48px;
+  padding-left: 16px;
+  margin-top: 10px;
+  border: 2px solid #E7E7E7;
+  border-radius: 6px;
+}
+
+.contact__input1{
+  width: 380px;
+  height: 96px;
+  padding-left: 16px;
+  font-size: 16px;
+  color: #808080;
+  margin-top: 10px;
+  padding-top: 12px;
+  border: 2px solid #E7E7E7;
+  border-radius: 6px;
+}
+
+
+.contact__btn{
+  width: 212px;
+  height: 56px;
+  background-color: #FD9339;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 5px;
+  line-height: 24px;
+  border: 2px solid #fff;
+  margin-top: 5px;
+} 
+
+
+.Contact__xarita{
+  margin-top: 80px;
+  display: flex;
+}
+
+.contact__xarita--h3{
+  font-size: 28px;
+  line-height: 40px;
+  color: #4E2D2D;
+  letter-spacing: 1%;
+}
+
+.contact__xarita--p{
+  font-size: 16px;
+  color: #808080;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.Contact__xarita--imags{
+  width: 400px;
+  height: 344px;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+
+.contact-paragraph{
+  font-size: 14px;
+  color: #292929;
+  line-height: 22px;
+  list-style: none;
+}
+
+.contact--link__p{
+  text-decoration: none;
+}
+/* Profile */
+
+.profile--iteam--ol{
+  display: flex;
+  gap: 11px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.profile__iteam{
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.profile__glavni{
+  font-size: 14px;
+  color: #808080;
+  line-height: 22px;
+  letter-spacing: 1%;
+}
+
+.profile__kabinit{
+  font-size: 14px;
+  color: #FD9339;
+  align-items: center;
+}
+
+.moy_profile{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.moy_profile--list{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile__alfa{
+  font-size: 16px;
+  color: #4E2D2D;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.moy_profile_kobinit{
+  color: #4E2D2D;
+  font-size: 28px;
+  line-height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.information{
+  width: 1180px;
+  height: 300px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  text-decoration: none;
+  list-style: none;
+ 
+  
+}
+
+.information__shadow{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 60px 40px 60px 40px;
+  
+}
+
+.information--anfalova{
+  font-size: 24px;
+  line-height: 32px;
+  color: #4E2D2D;
+  margin-bottom: 20px;
+}
+
+.information__list{
+  display: flex;
+  
+}
+
+.information__list{
+  p{
+    font-size: 16px;
+    line-height: 32px;
+    color: #808080;
+    
+  }
+}
+
+.information__ins{
+  font-size: 16px;
+    line-height: 32px;
+    color: #292929;
+    margin-left: 50px;
+    text-decoration: none;
+    
+}
+
+.information__ins1{
+  margin-left: 105px;
+  text-decoration: none;
+}
+
+.information__ins2{
+  margin-left: 130px;
+  text-decoration: none;
+}
+
+.information__left{
+  font-size: 16px;
+  line-height: 32px;
+  color: #FD9339;
+  border-bottom: 2px solid #FD9339;
+  width: 220px;
+  
+}
+
+
+
+
 
 
