@@ -1,10 +1,38 @@
-import React from "react";
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+import React, { useState } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 
 const Cart = () => {
+    const [state, setState] = useState(0);
+    const [state2, setState2] = useState(0);
+    const [state3, setState3] = useState(0);
+
+    const add = () => {
+      setState((prevState) => prevState + 1);
+    }
+  
+    const minus = () => {
+      if(state > 0) {
+        setState((prevState) => prevState - 1);
+      }
+    }
+    const add2 = () => {
+        setState2((prevState) => prevState + 1);
+      }
+    const minus2 = () => {
+        if(state2 > 0) {
+          setState2((prevState) => prevState - 1);
+        }
+      }
+    const add3 = () => {
+        setState3((prevState) => prevState + 1);
+      }
+    const minus3 = () => {
+        if(state3 > 0) {
+          setState3((prevState) => prevState - 1);
+        }
+      }
+    
     return (
         <div>
             <Header/>
@@ -46,6 +74,12 @@ const Cart = () => {
                                     <br />  <b>Удалить</b> 
                                     </p>
                                 </div>
+                                <div className="onclick-btn">
+                                    <button onClick={add3}>+</button>
+                                    <button>{state3}</button>
+                                    {/* <button onClick={reset}>Reset</button> */}
+                                    <button onClick = {minus3}>-</button>
+                                </div>
                                 <br />
                                 <p>600 ₽</p>
                             </div>
@@ -63,6 +97,12 @@ const Cart = () => {
                                     <br />  <b>Удалить</b> 
                                     </p>
                                 </div>
+                                <div className="onclick-btn">
+                                    <button onClick={add2}>+</button>
+                                    <button>{state2}</button>
+                                    {/* <button onClick={reset}>Reset</button> */}
+                                    <button onClick = {minus2}>-</button>
+                                </div>
                                 <br />
                                 <p>1800 ₽</p>
                             </div>
@@ -79,6 +119,12 @@ const Cart = () => {
                                     <br/>
                                     <br />  <b>Удалить</b> 
                                     </p>
+                                </div>
+                                <div className="onclick-btn">
+                                    <button onClick={add}>+</button>
+                                    <button>{state}</button>
+                                    {/* <button onClick={reset}>Reset</button> */}
+                                    <button onClick = {minus}>-</button>
                                 </div>
                                 <br />
                                 <p>950 ₽</p>

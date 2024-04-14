@@ -735,6 +735,19 @@ hr {
         color: #FD9339;
       }
     }
+    .onclick-btn{
+      margin-left: 30px;
+    }
+    .onclick-btn button{
+      width: 36px;
+      height: 36px;
+      border: 1px solid #80808033;
+      border-radius: 2px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #292929;
+      opacity: 0.8;
+    }
   }
   .cart--order--select {
     width: 780px;
