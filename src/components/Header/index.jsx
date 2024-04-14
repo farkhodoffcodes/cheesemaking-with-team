@@ -38,7 +38,7 @@ const Header = () => {
             <HeaderMedium>
                 <Container>
                     <div className='header-medium'>
-                    <img src="./images/icons/Logo.svg" alt="Logo" /> 
+                    <Link to={'/'}><img src="./images/icons/Logo.svg" alt="Logo" /> </Link>
                  <div className='icon'>
                     <img src="./images/icons/delivery.svg" alt="delivery" />
                  <p>Бесплатная доставка</p>
@@ -82,7 +82,7 @@ const Header = () => {
                         <p>Калькулятор Сыродела</p>
                     <Link to={'/reviews'} className='reviews-link'><p>Отзывы</p></Link> 
                         <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
-                        <p>Контакты</p>
+                        <Link to={'/'}><p>Контакты</p></Link>
                         <div className='input'>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" placeholder='Введите название товара или артикул'/>
@@ -100,7 +100,10 @@ const Header = () => {
 const Container = styled.div`
     width: 85%;
     margin: 0 auto;
-
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 `
 
 const HeaderTop = styled.div`

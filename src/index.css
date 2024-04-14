@@ -16,6 +16,9 @@ body{
   background-color: #fffbed;
   justify-content: space-between;
 }
+button{
+  cursor: pointer;
+}
 
 hr {
   background-color: #fffbed;
@@ -65,8 +68,10 @@ hr {
 .sidebars{
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 800px;
+    width: 22%;
+}
+.sidebars .top-sidebar{
+  width: 100%;
 }
 
 .card-block{
@@ -689,8 +694,8 @@ hr {
   margin: 0 auto;
   .cart--contact {
     width: 780px;
-    height: 213px;
-    background-color: #E6E6E6;
+    padding: 30px;
+    background-color: #fff;
     border-radius: 2px;
     margin-top: 30px;
     h2 {
@@ -700,15 +705,16 @@ hr {
     }
     .cart--wrapper {
       display: flex;
-      padding-left: 30px;
+      justify-content: space-between;
       gap: 40px;
       .cart-inp-one , .cart-inp-two {
         input {
-          width: 350px;
+          width: 340px;
           height: 48px;
-          padding-left: 20px;
+          margin-top: 15px;
+          padding: 20px;
           border-radius: 5px;
-          border: 1px solid gray;
+          border: 1px solid #E7E7E7;
         }
       }
     }
@@ -716,7 +722,7 @@ hr {
   .cart--order--name {
     width: 780px;
     height: 580px;
-    background-color: #E6E6E6;
+    background-color: #fff;
     border-radius: 2px;
     margin-top: 30px;
     h2 {
@@ -752,7 +758,7 @@ hr {
   .cart--order--select {
     width: 780px;
     height: 630px;
-    background-color: #E6E6E6;
+    background-color: #fff;
     border-radius: 2px;
     margin-top: 30px;
     h2 {
@@ -776,7 +782,8 @@ hr {
         input {
           width: 350px;
           height: 48px;
-          padding-left: 20px;
+          margin-top: 20px;
+          padding: 20px;
           border-radius: 5px;
           border: 1px solid gray;
         }
@@ -796,7 +803,7 @@ hr {
   .cart--order--cash--select {
     width: 780px;
     height: 242px;
-    background-color: #E6E6E6;
+    background-color: #fff;
     border-radius: 2px;
     margin-top: 30px;
     h2 {
@@ -830,9 +837,9 @@ hr {
       input {
         width: 320px;
         height: 48px;
-        padding-left: 20px;
-        border-radius: 0px 0px 0px 0px;
-        border: 1px solid gray;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #E7E7E7;
       }
       p {
         position: absolute;
