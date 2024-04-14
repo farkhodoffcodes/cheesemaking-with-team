@@ -57,7 +57,7 @@ const Header = () => {
                         <img src="./images/icons/Messenger.svg" alt="tg" />
                     <div>
                         <p>+8 916 460-19-60</p>
-                        <button className='btn'> <img src="./images/icons/call.svg" alt="" /> Заказать звонок</button>
+                        <Link to={'/cart'} className='btn-link'><button className='btn'> <img src="./images/icons/call.svg" alt="" /> Заказать звонок</button></Link>
                     </div>
                  </div>
                  <div className='addToCart'>
@@ -65,7 +65,7 @@ const Header = () => {
                         <p>Ваша корзина</p>
                         <span>1680 руб. </span>
                     </div>
-                    <img src="./images/icons/cart.svg" alt="cart" />
+                   <Link to={'/cart'}><img src="./images/icons/cart.svg" alt="cart" /></Link>
                  </div>
                     </div>
                  
@@ -183,6 +183,9 @@ const HeaderMedium = styled.div`
             padding: 10px;
             background-color: #fffbed;
             cursor: pointer;
+        }
+        .btn-link {
+            text-decoration: none;
         }
         .btn:hover{
             background-color: #FD9339;

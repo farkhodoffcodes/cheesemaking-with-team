@@ -8,6 +8,7 @@ import Delivery from "./components/Delivery/Delivery";
 import AnsAndQuest from "./components/AnsAndQuest/AnsAndQuest";
 import Reviews from "./components/Reviews";
 import ReceiptDetails from "./components/ReceiptDetails";
+import Cart from "./components/Cart";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/receipts" element={<Receipts />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/receiptdetails" element={<ReceiptDetails/>}/>
+        <Route path="/cart" element={<Cart/>}/>
         
       </Routes>
     </BrowserRouter>
