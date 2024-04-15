@@ -13,8 +13,8 @@ const About = () => {
         <AboutNavbar>
             <div className="about-navbar">
                 <div className="container">
-                    <Link className='link about-top-link1' to="/glavniy"><p>Главная <i class="fa-solid fa-chevron-right"></i></p></Link>
-                    <Link className='link about-top-link2' to="/o-kampaniya"><p>О нашей компании</p></Link>
+                    <Link className='link about-top-link1' to={"/home"}><p>Главная <i class="fa-solid fa-chevron-right"></i></p></Link>
+                    <Link className='link about-top-link2' to={"/about"}><p>О нашей компании</p></Link>
                 </div>
             </div>
         </AboutNavbar>
@@ -413,7 +413,7 @@ const CompanyHero = styled.div`
 
                 .cheese-wrapper{
                     display:flex;
-                    align-items:center:
+                    align-items: center;
                     flex-direction: row;
                     justify-content: space-between;
                     width:920px;
@@ -454,7 +454,7 @@ const CompanyHero = styled.div`
                         .masters-list-item{
                             width:260px;
                             height:481px;
-                            border-radiu:5px;
+                            border-radius: 5px;
 
                             &:hover{
                                 cursor:pointer; 
@@ -510,7 +510,7 @@ const CompanyHero = styled.div`
                         width:920px;
                         list-style:none;
                         display:flex;
-                        alig-items:center;
+                        align-items:center;
                         gap:20px;
                         flex-wrap:wrap;
 

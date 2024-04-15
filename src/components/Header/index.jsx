@@ -81,7 +81,7 @@ const Header = () => {
                     <Link to={'/delivery'} className='delivery-and-payment-link'><p className='delivery-and-payment-p'>Доставка и оплата</p></Link>
                         <p>Калькулятор Сыродела</p>
                     <Link to={'/reviews'} className='reviews-link'><p>Отзывы</p></Link> 
-                        <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
+                    <Link to={'/ansandquest'} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
                         <p>Контакты</p>
                         <div className='input'>
                             <i class="fa-solid fa-magnifying-glass"></i>
