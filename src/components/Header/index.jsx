@@ -38,7 +38,7 @@ const Header = () => {
             <HeaderMedium>
                 <Container>
                     <div className='header-medium'>
-                    <Link to={'/home'}><img src="./images/icons/Logo.svg" alt="Logo" /> </Link>
+                    <Link to={'/'}><img src="./images/icons/Logo.svg" alt="Logo" /> </Link>
                  <div className='icon'>
                     <img src="./images/icons/delivery.svg" alt="delivery" />
                  <p>Бесплатная доставка</p>
