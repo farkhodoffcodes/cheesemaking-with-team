@@ -38,7 +38,7 @@ const Header = () => {
             <HeaderMedium>
                 <Container>
                     <div className='header-medium'>
-                    <img src="./images/icons/Logo.svg" alt="Logo" /> 
+                    <Link to={'/'}><img src="./images/icons/Logo.svg" alt="Logo" /> </Link>
                  <div className='icon'>
                     <img src="./images/icons/delivery.svg" alt="delivery" />
                  <p>Бесплатная доставка</p>
@@ -57,7 +57,7 @@ const Header = () => {
                         <img src="./images/icons/Messenger.svg" alt="tg" />
                     <div>
                         <p>+8 916 460-19-60</p>
-                        <button className='btn'> <img src="./images/icons/call.svg" alt="" /> Заказать звонок</button>
+                        <Link to={'/cart'} className='btn-link'><button className='btn'> <img src="./images/icons/call.svg" alt="" /> Заказать звонок</button></Link>
                     </div>
                  </div>
                  <div className='addToCart'>
@@ -65,7 +65,7 @@ const Header = () => {
                         <p>Ваша корзина</p>
                         <span>1680 руб. </span>
                     </div>
-                    <img src="./images/icons/cart.svg" alt="cart" />
+                   <Link to={'/cart'}><img src="./images/icons/cart.svg" alt="cart" /></Link>
                  </div>
                     </div>
                  
@@ -82,11 +82,7 @@ const Header = () => {
                         <p>Калькулятор Сыродела</p>
                     <Link to={'/reviews'} className='reviews-link'><p>Отзывы</p></Link> 
                         <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
-                        <Link to={"/contact"} className='contact--link__p'>
-                        
-                        <p className='contact-paragraph'>Контакты</p>
-                    
-                        </Link>
+                        <p>Контакты</p>
                         <div className='input'>
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" placeholder='Введите название товара или артикул'/>
@@ -104,7 +100,10 @@ const Header = () => {
 const Container = styled.div`
     width: 85%;
     margin: 0 auto;
-
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 `
 
 const HeaderTop = styled.div`
@@ -187,6 +186,9 @@ const HeaderMedium = styled.div`
             padding: 10px;
             background-color: #fffbed;
             cursor: pointer;
+        }
+        .btn-link {
+            text-decoration: none;
         }
         .btn:hover{
             background-color: #FD9339;

@@ -7,10 +7,11 @@ import Delivery from "./components/Delivery/Delivery";
 import AnsAndQuest from "./components/AnsAndQuest/AnsAndQuest";
 import Reviews from "./components/Reviews";
 import ReceiptDetails from "./components/ReceiptDetails";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Profile from "./components/Profile";
 import Yeast from "./components/Yeast";
+import Profile from "./components/Profile";
+import About from "./components/About";
+import Cart from "./components/Cart";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/about" element={<About />} />
         <Route path="/receiptdetails" element={<ReceiptDetails/>}/>
+        <Route path="/cart" element={<Cart/>}/>
         
       </Routes>
     </BrowserRouter>

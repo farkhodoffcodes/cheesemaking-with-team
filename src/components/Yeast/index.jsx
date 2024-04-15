@@ -258,6 +258,7 @@ const Category__main = styled.div`
     gap:20px;
     flex-direction:row;
     z-index:3;
+    
   }
 `
 

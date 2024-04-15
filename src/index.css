@@ -16,6 +16,9 @@ body{
   background-color: #fffbed;
   justify-content: space-between;
 }
+button{
+  cursor: pointer;
+}
 
 hr {
   background-color: #fffbed;
@@ -65,8 +68,10 @@ hr {
 .sidebars{
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 800px;
+    width: 22%;
+}
+.sidebars .top-sidebar{
+  width: 100%;
 }
 
 .card-block{
@@ -358,7 +363,7 @@ hr {
 }
 
 .top-sidebar{
-    width: 100%;
+    width: 280px !important;
     margin-bottom: 20px;
     border-radius: 8px 8px 8px 8px;
     background-color: white;
@@ -976,5 +981,204 @@ hr {
 
 
 
+.cart--order {
+  width: 85%;
+  margin: 0 auto;
+  .cart--contact {
+    width: 780px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 30px;
+    h2 {
+      font-size: 18px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+    .cart--wrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      .cart-inp-one , .cart-inp-two {
+        input {
+          width: 340px;
+          height: 48px;
+          margin-top: 15px;
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid #E7E7E7;
+        }
+      }
+    }
+  }
+  .cart--order--name {
+    width: 780px;
+    height: 580px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 30px;
+    h2 {
+      font-size: 18px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+    span {
+      padding-left: 600px;
+    }
+    .cart--order--name--one {
+      display: flex;
+      gap: 20px;
+      margin-left: 30px;
+      b {
+        color: #FD9339;
+      }
+    }
+    .onclick-btn{
+      margin-left: 30px;
+    }
+    .onclick-btn button{
+      width: 36px;
+      height: 36px;
+      border: 1px solid #80808033;
+      border-radius: 2px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #292929;
+      opacity: 0.8;
+    }
+  }
+  .cart--order--select {
+    width: 780px;
+    height: 630px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 30px;
+    h2 {
+      font-size: 18px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+    .order--select {
+      display: flex;
+      padding-left: 30px;
+      gap: 20px;
+      b {
+        color: #FD9339;
+      }
+    }
+    .cart--pay--select {
+      display: flex;
+      gap: 10px;
+      padding-left: 30px;
+      .cart-pay-one {
+        input {
+          width: 350px;
+          height: 48px;
+          margin-top: 20px;
+          padding: 20px;
+          border-radius: 5px;
+          border: 1px solid gray;
+        }
+      }
+      .cart-pay-two {
+        display: flex;
+        p {
+          font-size: 14px;
+          padding-left: 10px;
+          b {
+            color: #FD9339;
+          }
+        }
+      }
+    }
+  }
+  .cart--order--cash--select {
+    width: 780px;
+    height: 242px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 30px;
+    h2 {
+      font-size: 18px;
+      padding-left: 30px;
+      padding-top: 20px;
+    }
+    .order--select--cash {
+      padding-left: 30px;
+      span {
+        padding-left: 10px;
+      }
+    }
+  }
+  .cart--container--inner-two {
+    width: 380px;
+    height: 526px;
+    background-color: #FBE8BB;
+    margin-top: 30px;
+    h2  {
+      padding-left: 20px;
+      padding-top: 10px;
+    }
+    p {
+      padding-left: 20px;
+    }
+    .cart-promokod {
+      padding-left: 20px;
+      padding-top: 10px;
+      display: flex;
+      input {
+        width: 320px;
+        height: 48px;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #E7E7E7;
+      }
+      p {
+        position: absolute;
+        left: 1140px;
+        top: 457px;
+      }
+    }
+    .cart--sum {
+      display: flex;
+      gap: 140px;
+    }
+    .cart--sum-two {
+      display: flex;
+      gap: 200px;
+    }
+    .cart--sum-three {
+      display: flex;
+      gap: 170px;
+    }
+    .cart--sum-four {
+      display: flex;
+      gap: 160px;
+      margin-left: 20px;
+    }
+    button {
+      width: 320px;
+      height: 56px;
+      background-color: #FD9339;
+      color: white;
+      border-radius: 5px;
+      border: 1px solid #FD9339;
+      margin-left: 20px;
+    }
+    button:hover {
+      width: 320px;
+      height: 56px;
+      background-color: white;
+      color: #FD9339;
+      border-radius: 5px;
+      border: 1px solid #FD9339;
+      margin-left: 20px;
+    }
+  }
+}
 
+.cart--container {
+  display: flex;
+  gap: 20px;
+}
 

@@ -99,7 +99,7 @@ const Category_main = styled.div`
         margin-top:20px;
 
         .category__main--left{
-            width:30%;
+            // width:30%;
             height:797px;
         }
 
