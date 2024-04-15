@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -20,7 +21,7 @@ const Footer = () => {
                     <h3>Компания</h3>
                     <ul>
                       <li>
-                        <a href="#">О компании</a>
+                        <Link to='/about'><a href="#">О компании</a></Link>
                       </li>
                       <li>
                         <a href="#">Акции и скидки</a>
