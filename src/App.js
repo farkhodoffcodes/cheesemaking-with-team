@@ -12,16 +12,18 @@ import Profile from "./components/Profile";
 import About from "./components/About";
 import Cart from "./components/Cart";
 import Contact from "./components/Contact";
+import Not from "./components/NotFound";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/category" element={<Category />} />
+        <Route path="/" element={<Not />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/Profile" element={<Profile />} />
-        <Route path="/yeast" element={<Yeast/>} />
+        <Route path="/" element={<Yeast/>} />
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/ansandquest" element={<AnsAndQuest/>} />
         <Route path="/receipts" element={<Receipts />} />

@@ -10,16 +10,16 @@ const About = () => {
     <div>
         <Header/>
       <section className='about'>
-        <About_navbar>
+        <AboutNavbar>
             <div className="about-navbar">
                 <div className="container">
                     <Link className='link about-top-link1' to="/glavniy"><p>Главная <i class="fa-solid fa-chevron-right"></i></p></Link>
                     <Link className='link about-top-link2' to="/o-kampaniya"><p>О нашей компании</p></Link>
                 </div>
             </div>
-        </About_navbar>
+        </AboutNavbar>
 
-        <Company_hero>
+        <CompanyHero>
         <div className="company-hero">
             <div className="container">
                 <Sidebar/>
@@ -95,14 +95,266 @@ const About = () => {
                 </div>
             </div>
         </div>
-        </Company_hero>
+        </CompanyHero>
+
+        <Result>
+            <section className='result-client'>
+                <ol className='result-client-list'>
+                    <li className='client-item'>
+                        <h2 className='client-heading'>Клиент всегда прав</h2>
+                        <p className='client-desc'>Мы стремимся обеспечить обслуживание клиентов таким образом, чтобы на всех этапах сотрудничества клиент ощущал комфорт и удовлетворение. Наивысшей оценка нашей деятельности являются положительные отзывы о нашей компании.</p>
+                        <button className='client-btn'>Оставить отзыв</button>
+
+                        <img className='client-img1' src="../images/about-client-img1.svg" alt="rasm" />
+                        <img className='client-img2' src="../images/about-client-img2.svg" alt="rasm" />
+                        <img className='client-img3' src="../images/about-client-img3.svg" alt="rasm" />
+                        <img className='client-img4' src="../images/about-client-img4.svg" alt="rasm" />
+                        <img className='client-img5' src="../images/about-client-img5.svg" alt="rasm" />
+                    </li>
+
+                    <li className='result-item'>
+                        <h2 className='result-heading'>лучший результат</h2>
+                        <p className='result-desc'>Наши товары, помогут Вам достичь лучших результатов</p>
+                        <img className='result-img1' src="../images/about-result-img1.png" alt="rasm" />
+                        <img className='result-img2' src="../images/about-result-img2.png" alt="rasm" />
+                        <img className='result-img3' src="../images/about-result-img3.svg" alt="rasm" />
+                        <img className='result-img4' src="../images/about-result-img4.svg" alt="rasm" />
+                        <img className='result-img5' src="../images/about-result-img5.svg" alt="rasm" />
+                        <img className='result-img6' src="../images/about-result-img6.svg" alt="rasm" />
+                    </li>
+                </ol>
+            </section>
+        </Result>
+
+        <Shop>
+            <section className='shop'>
+                <div className="container">
+                    <div className="shop-left">
+                        <h2>о нашем магазине</h2>
+                        <p>Интернет-магазин «ЛяЧиз» предлагает своим покупателям широчайший ассортимент оборудования, ингредиентов и аксессуаров для домашнего сыроделия.
+                        <br />
+                        <br />
+                        С нашей продукцией у Вас появится возможность приготовить любой сыр в домашних условиях и насладиться всеми его оттенками и разнообразием, а также Вы окунётесь в мир сыроделия и узнаете всё о приготовлении любого вида сыра своими руками.
+                        <br />
+                        <br />
+                        С нашим оборудованием у вас появится возможность расширить свои способности, а также приготовить вкусный и качественный сыр.
+                        <br />
+                        <br />  
+                        "ЛяЧиз" за качество, надёжность, технологичность и презентабельность! Будем и дальше радовать вас большим ассортиментом и новинками,  а вы нас - своими заказами!</p>
+                    </div>
+                    <div className="shop-right">
+                        <img src="../images/about-shop-img1.png" alt="rasm" />
+                        <img src="../images/about-shop-img1.png" alt="rasm" />
+                        <img src="../images/about-shop-img1.png" alt="rasm" />
+                        <img src="../images/about-shop-img1.png" alt="rasm" />
+                    </div>
+                </div>
+            </section>
+        </Shop>
       </section>
       <Footer/>
     </div>
   )
 }
 
-const About_navbar = styled.div`
+
+const Shop = styled.div`
+
+    .shop{
+        margin-bottom:108px;
+        .container{
+            display:flex;
+            align-items:center;
+            flex-direction:row;
+            justify-content:space-between;
+
+            .shop-left{
+                width:500px;
+                height:auto;
+
+                h2{
+                    font-size:28px;
+                    line-height:40px;
+                    color:#4E2D2D;
+                    margin-bottom:24px;
+                }
+
+                p{
+                    font-size:16px;
+                    line-height:24px;
+                    color:#666666;
+                    font-weight:500;
+                }
+            }
+
+            .shop-right{
+                width:580px;
+                height:auto;
+                border-radius:5px;
+                display:flex;
+                align-items:center;
+                flex-wrap:wrap;
+                gap:20px;
+            }
+        }
+    }
+`
+
+const Result = styled.div`
+    .result-client{
+        margin-bottom:127px;
+        ol{
+            display:flex;
+            justify-content:space-between;
+            list-style:none;
+            gap:20px;
+
+            li{
+                width:830px;
+                height:420px;
+            }
+
+            .client-item{
+                position:relative;
+                padding-left:200px;
+                background-color:#FEE9A5;
+                padding-top:94px;
+                padding-right:102px;
+
+                .client-heading{
+                    font-size:28px;
+                    line-height:40px;
+                    color:#4E2D2D;
+                }
+
+                .client-desc{
+                    font-size:16px;
+                    line-height:24px;
+                    color:#666666;
+                    font-weight:500;
+                    margin-bottom:6px;
+                }
+
+                .client-btn{
+                    width:212px;
+                    height:56px;
+                    border-radius:5px;
+                    background-color:#FD9339;
+                    border:none;
+                    font-size:16px;
+                    line-height:24px;
+                    color:#fff;
+                    cursor:pointer;
+                    transition:all 0.3s ease-in-out;
+
+
+                    &:hover{
+                        border:3px solid #FD9339;
+                        background-color: #fff;
+                        color:#FD9339;
+                        font-weight:bold;
+                        transition:all 0.3s ease-in;
+                    }
+
+                    &:active{
+                        opacity:0.6;
+                        transition:all 0.3s ease-in;
+                    }
+                }
+
+                .client-img1{
+                    position:absolute;
+                    right:40px;
+                    bottom:40px;
+                }
+
+                .client-img2{
+                    position:absolute;
+                    right:151px;
+                    bottom:20px;
+                }
+
+                .client-img3{
+                    position:absolute;
+                    top:0px;
+                    left:0px;
+                }
+
+                .client-img4{
+                    position:absolute;
+                    right:0px;
+                    top:0px;
+                }
+
+                .client-img5{
+                    position:absolute;
+                    left:68px;
+                    bottom:45px;
+                }
+            }
+
+            .result-item{
+                position:relative;
+                padding: 94px 283px 224px 80px !important;
+                background: rgb(210,210,211);
+                background: linear-gradient(90deg, rgba(210,210,211,1) 50%, rgba(223,223,224,1) 75%);
+
+                .result-heading{
+                    font-size:28px;
+                    line-height:40px;
+                    color:#4E2D2D;
+                }
+
+                .result-desc{
+                    font-size:16px;
+                    line-height:24px;
+                    color:#666666;
+                    font-weight:500;
+                }
+
+                .result-img1{
+                    position:absolute;
+                    top:38px;
+                    right:0px;
+                }
+
+                .result-img2{
+                    position:absolute;
+                    top:0px;
+                    right:144px;
+                }
+
+                .result-img3{
+                    position:absolute;
+                    bottom:48px;
+                    left:80px;
+                }
+
+                .result-img4{
+                    position:absolute;
+                    bottom:0px;
+                    left:170px;
+                }
+
+                .result-img5{
+                    position:absolute;
+                    bottom:161px;
+                    left:0px;
+                }
+
+                .result-img6{
+                    position:absolute;
+                    bottom:161px;
+                    right:0px;
+                }
+            }
+        }
+
+    }
+
+`
+
+const AboutNavbar = styled.div`
 
     .about-navbar{
         margin-bottom:20px;
@@ -141,7 +393,7 @@ const About_navbar = styled.div`
     
 `
 
-const Company_hero = styled.div`
+const CompanyHero = styled.div`
 
     .company-hero{
         .container{
