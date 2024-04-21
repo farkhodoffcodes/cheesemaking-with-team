@@ -79,7 +79,7 @@ const Header = () => {
                         <i class="fa-solid fa-chevron-down"></i>
                         </p></Link>
                     <Link to={'/delivery'} className='delivery-and-payment-link'><p className='delivery-and-payment-p'>Доставка и оплата</p></Link>
-                        <p>Калькулятор Сыродела</p>
+                        <Link to={'/calculator'} className='calculator-link'><p>Калькулятор Сыродела</p></Link>
                     <Link to={'/reviews'} className='reviews-link'><p>Отзывы</p></Link> 
                         <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
                         <p>Контакты</p>
@@ -87,7 +87,6 @@ const Header = () => {
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input type="text" placeholder='Введите название товара или артикул'/>
                         </div>
-                        
                     </div>
                 </Container>
                 <hr />

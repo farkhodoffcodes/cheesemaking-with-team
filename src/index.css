@@ -25,16 +25,17 @@ hr {
 .wrapper-for-all{
   padding: 0 110px;
 }
+
 .sidebar-and-card{
   /* background-color: red; */
+  width: 1300px;
+  margin: 0 auto;
   display: flex;
   margin-top: 40px;
 }
 
-
-
 .delivery-and-sidebar{
-  width: 85%;
+  width: 1300px;
   margin: 0 auto;
   display: flex;
   /* background-color: rgb(101, 101, 206); */
@@ -80,7 +81,6 @@ hr {
   .first-card{
     margin-top: 20px;
     width: 260px;
-    /* height: 320px; */
     background-color: white;
     padding: 25px;
     border-radius: 5px;
@@ -382,7 +382,12 @@ hr {
     width: 100%;
     height: 48px; 
     background-color: #FBE8BB;
-    border-radius: 8px 8px 0 0; 
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    
+    &:active{
+      background-color: #F5C775;
+    }
 }
 
 .middle-of-sidebar{
@@ -398,13 +403,16 @@ hr {
 .first-loc{
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
     align-items: center;
     width: 100%;
-    /* height: 48px; */
     padding: 10px 15px 10px 10px;
     border-top: 1px solid gray;
     
       &:active{
+        background-color: #FAE8A8;
+      }
+      &:hover{
         background-color: #FAE8A8;
       }
 }
@@ -491,6 +499,12 @@ hr {
           font-size: 14px;
           font-weight: 400;
           line-height: 24px;
+          cursor: pointer;
+
+          &:active{
+            background-color: #E6E6E6;
+            transition: 0.1s ease-in;
+          }
         }
       }
       .two-circles{
@@ -517,9 +531,9 @@ hr {
 
 .ans-and-quest{
   width: 100%;
-
+  
   .sidebar-and-quests{
-    width: 85%;
+    width: 1300px;
     display: flex;
     margin: 0 auto;
 
@@ -684,5 +698,7 @@ hr {
   z-index: 1;
 }
 
-
-
+.calculator-link{
+  text-decoration: none;
+  color: #000000;
+}

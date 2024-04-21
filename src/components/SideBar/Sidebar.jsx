@@ -11,34 +11,42 @@ const Sidebar = () => {
                 <h4 className='receipts-h4'>Ингредиенты</h4>
             </div>
             <div className="middle-of-sidebar">
-                <div className="first-loc">
-                    <p className='receipt-menu-p'>Закваски для сыра</p>
-                    <img src="./img/Vector (4).svg" alt="" />
-                </div>
-                <div className="first-loc">
-                    <p className='receipt-menu-p'>Ферменты для сыра</p>
-                    <img src="./img/Vector (4).svg" alt="" />
-                </div>
+                <Link className='links' to={"/k-закваски"}>
+                    <div className="first-loc">
+                        <p className='receipt-menu-p'>Закваски для сыра</p>
+                        <img src="./img/Vector (4).svg" alt="" />
+                    </div>
+                </Link>
+                <Link className='links' to={"/k-закваски"}>
+                    <div className="first-loc">
+                        <p className='receipt-menu-p'>Ферменты для сыра</p>
+                        <img src="./img/Vector (4).svg" alt="" />
+                    </div>
+                </Link>
                 <div className="first-loc">
                     <p className='receipt-menu-p'>Хлористый кальций</p>
                 </div>
-                <div className="first-loc">
-                    <p>Плесень для сыра</p>
-                    <img src="./img/Vector (4).svg" alt="" />
-                </div>
                 <Link className='links' to={"/k-закваски"}>
-                <div className="first-loc k-закваски">
-                    <p className='receipt-menu-p '>Кисломолочные закваски</p>
-                    <img src="./img/Vector (4).svg" alt="" />
-                </div>
+                    <div className="first-loc">
+                        <p className='receipt-menu-p'>Плесень для сыра</p>
+                        <img src="./img/Vector (4).svg" alt="" />
+                    </div>
+                </Link>
+                <Link className='links' to={"/k-закваски"}>
+                    <div className="first-loc k-закваски">
+                        <p className='receipt-menu-p '>Кисломолочные закваски</p>
+                        <img src="./img/Vector (4).svg" alt="" />
+                    </div>
                 </Link>
                 <div className="first-loc">
                     <p className='receipt-menu-p'>Красители для сыра</p>
                 </div>
-                <div className="first-loc">
-                    <p className='receipt-menu-p'>Специи для сыра</p>
-                    <img src="./img/Vector (4).svg" alt="" />
-                </div>
+                <Link className='links' to={"/k-закваски"}>
+                    <div className="first-loc">
+                        <p className='receipt-menu-p'>Специи для сыра</p>
+                        <img src="./img/Vector (4).svg" alt="" />
+                    </div>
+                </Link>
             </div>
         </div>
         <div className="top-sidebar">

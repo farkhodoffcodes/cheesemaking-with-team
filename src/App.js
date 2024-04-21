@@ -8,6 +8,8 @@ import Delivery from "./components/Delivery/Delivery";
 import AnsAndQuest from "./components/AnsAndQuest/AnsAndQuest";
 import Reviews from "./components/Reviews";
 import ReceiptDetails from "./components/ReceiptDetails";
+import Calculator from "./components/Calculator/Calculator";
+import NotFound from "./components/NotFound/NotFound";
 
 const App = () => {
   return (
@@ -21,7 +23,8 @@ const App = () => {
         <Route path="/receipts" element={<Receipts />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/receiptdetails" element={<ReceiptDetails/>}/>
-        
+        <Route path="/calculator" element={<Calculator/>}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
