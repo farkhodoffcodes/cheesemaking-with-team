@@ -21,7 +21,7 @@ const Header = () => {
                         <p>Пн-Пт 9:00 - 19:00</p>
                     </div>
                     <div className='about'>
-                        <Link to={'/'}>О компании</Link>
+                        <Link title='about' to={'/about'}>О компании</Link>
                         <Link to={'/'}>Преимущества</Link>
                         <Link to={'/'}>Акционные товары</Link>
                     <div className='icon'>
@@ -30,7 +30,7 @@ const Header = () => {
                     </div>
                     </div>
                     
-
+                        
                     </div>
                 </Container>
                 <hr />
@@ -38,7 +38,7 @@ const Header = () => {
             <HeaderMedium>
                 <Container>
                     <div className='header-medium'>
-                    <img src="./images/icons/Logo.svg" alt="Logo" /> 
+                    <Link to={'/'}><img src="./images/icons/Logo.svg" alt="Logo" /> </Link>
                  <div className='icon'>
                     <img src="./images/icons/delivery.svg" alt="delivery" />
                  <p>Бесплатная доставка</p>
@@ -57,7 +57,7 @@ const Header = () => {
                         <img src="./images/icons/Messenger.svg" alt="tg" />
                     <div>
                         <p>+8 916 460-19-60</p>
-                        <button className='btn'> <img src="./images/icons/call.svg" alt="" /> Заказать звонок</button>
+                        <Link to={'/cart'} className='btn-link'><button className='btn'> <img src="./images/icons/call.svg" alt="" /> Заказать звонок</button></Link>
                     </div>
                  </div>
                  <div className='addToCart'>
@@ -65,7 +65,7 @@ const Header = () => {
                         <p>Ваша корзина</p>
                         <span>1680 руб. </span>
                     </div>
-                    <img src="./images/icons/cart.svg" alt="cart" />
+                   <Link to={'/cart'}><img src="./images/icons/cart.svg" alt="cart" /></Link>
                  </div>
                     </div>
                  
@@ -81,7 +81,7 @@ const Header = () => {
                     <Link to={'/delivery'} className='delivery-and-payment-link'><p className='delivery-and-payment-p'>Доставка и оплата</p></Link>
                         <Link to={'/calculator'} className='calculator-link'><p>Калькулятор Сыродела</p></Link>
                     <Link to={'/reviews'} className='reviews-link'><p>Отзывы</p></Link> 
-                        <Link to={"/ansandquest"} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
+                    <Link to={'/ansandquest'} className='ans-and-quest-link'><p>Вопросы и ответы</p></Link>
                         <p>Контакты</p>
                         <div className='input'>
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -99,7 +99,10 @@ const Header = () => {
 const Container = styled.div`
     width: 85%;
     margin: 0 auto;
-
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 `
 
 const HeaderTop = styled.div`
@@ -182,6 +185,9 @@ const HeaderMedium = styled.div`
             padding: 10px;
             background-color: #fffbed;
             cursor: pointer;
+        }
+        .btn-link {
+            text-decoration: none;
         }
         .btn:hover{
             background-color: #FD9339;

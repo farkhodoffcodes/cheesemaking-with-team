@@ -26,6 +26,7 @@ const Sidebar = () => {
                 <div className="first-loc">
                     <p className='receipt-menu-p'>Хлористый кальций</p>
                 </div>
+
                 <Link className='links' to={"/k-закваски"}>
                     <div className="first-loc">
                         <p className='receipt-menu-p'>Плесень для сыра</p>
@@ -37,6 +38,17 @@ const Sidebar = () => {
                         <p className='receipt-menu-p '>Кисломолочные закваски</p>
                         <img src="./img/Vector (4).svg" alt="" />
                     </div>
+                </Link>
+                <div className="first-loc">
+                    <p>Плесень для сыра</p>
+                    <img src="./img/Vector (4).svg" alt="" />
+                </div>
+                <Link className='links' to={"/yeast"}>
+                <div className="first-loc k-закваски">
+                    <p className='receipt-menu-p '>Кисломолочные закваски</p>
+                    <img src="./img/Vector (4).svg" alt="" />
+                </div>
+
                 </Link>
                 <div className="first-loc">
                     <p className='receipt-menu-p'>Красители для сыра</p>

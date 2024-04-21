@@ -13,9 +13,9 @@ const Category = () => {
       <Category_top>
         <Container>
             <ol className='category--top__menu'>
-                <Link className='links' to={"/главная"}><li className='category--top__menu__item'>Главная <i class="fa-solid fa-chevron-right"></i></li></Link>
-                <Link className='links' to={"/ингредиенты"}><li className='category--top__menu__item'>Ингредиенты <i class="fa-solid fa-chevron-right"></i></li></Link>
-               <Link className='links' to={"/Кисломолочные закваски"}> <li className='category--top__menu__item' id='category--top__menu__item-active'>Кисломолочные закваски</li></Link>
+                <Link className='links' to={"/not"}><li className='category--top__menu__item'>Главная <i class="fa-solid fa-chevron-right"></i></li></Link>
+                <Link className='links' to={"/not"}><li className='category--top__menu__item'>Ингредиенты <i class="fa-solid fa-chevron-right"></i></li></Link>
+               <Link className='links' to={"/not"}> <li className='category--top__menu__item' id='category--top__menu__item-active'>Кисломолочные закваски</li></Link>
             </ol>
         </Container>
       </Category_top>
@@ -99,7 +99,7 @@ const Category_main = styled.div`
         margin-top:20px;
 
         .category__main--left{
-            width:30%;
+            // width:30%;
             height:797px;
         }
 
